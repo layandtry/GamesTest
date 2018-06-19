@@ -5,6 +5,96 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_item_list">Items</string>
+    <string name="title_item_list">游戏关卡</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_scrolling">游戏规则</string>
+    <string name="large_text">
+        "欢迎来到锤锤的小游戏！\n\n"
+
+        <!---->
+        <!--"use of familiar tactile attributes helps users quickly understand affordances. Yet the "-->
+        <!--"flexibility of the material creates new affordances that supercede those in the physical "-->
+        <!--"world, without breaking the rules of physics.\n"-->
+        <!--"The fundamentals of light, surface, and movement are key to conveying how objects move, "-->
+        <!--"interact, and exist in space and in relation to each other. Realistic lighting shows "-->
+        <!--"seams, divides space, and indicates moving parts.\n\n"-->
+        <!--"The foundational elements of print based design typography, grids, space, scale, color, "-->
+        <!--"and use of imagery guide visual treatments. These elements do far more than please the "-->
+        <!--"eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "-->
+        <!--"imagery, large scale typography, and intentional white space create a bold and graphic "-->
+        <!--"interface that immerse the user in the experience.\n"-->
+        <!--"An emphasis on user actions makes core functionality immediately apparent and provides "-->
+        <!--"waypoints for the user.\n\n"-->
+
+        "往返校园，最头疼的问题就是如何整理行李箱,\n\n"
+
+        "才能放置最多的物品，怎么才能把自己的行李箱的空间合理利用！\n "
+        "接下来，就让锤锤介绍给你一些小方法，希望能帮助到您！\n\n"
+
+        "1.首先，先把包衣服对折然后卷成卷，这样既可以节省空间也可以减少衣服褶皱。\n\n"
+        "2.把打算装箱的衣服分别整理为“薄衣服”“外套”“内衣物”“长裤”四类，"
+        "然后开始准备装箱！\n\n"
+        "3.这里要注意一个问题，内衣物是很干净的东西，需要装进袋子包好！\n\n"
+        "4.下面开始装箱，第一层先用一部分薄衣物将箱子底不平的地方填平整。然后把长裤类左右摊平放好。\n\n"
+        "5.接着再放一层薄衣物（如果没有就放其他衣物），再把叠好的外套整齐放好。\n\n"
+        "6.最后就是把裤腿左右包起来，这样可以减少裤子因折叠起皱，"
+        "再把其他的小物件顺着箱子的结构填充在边角等空隙的地方。然后盖上盖子就OK了！\n\n"
+        "在第一个关卡中，\n"
+        "玩家需要将相应数量的衣服和裤子，按照一定的排列组合放入行李箱中。\n"
+        "这个时候就需要玩家的空间思维能力和一定的计算能力。\n"
+        "完成时间越短，玩家获得的分数越高。\n\n"
+
+        "越到后面的关卡，所放入的东西就会越多，\n"
+        "但玩家所放入的动作有折叠和平铺这两个操作，来节省空间。\n\n "
+        "亲，赶紧来收拾你的行李吧！！\n\n"
+        <!--"On the web, the z-axis is used for layering and not for perspective. The 3D world is "-->
+        <!--"emulated by manipulating the y-axis.\n\n"-->
+
+        <!--"Light and shadow.\n\n"-->
+
+        <!--"Within the material environment, virtual lights illuminate the scene. Key lights create "-->
+        <!--"directional shadows, while ambient light creates soft shadows from all angles.\n"-->
+        <!--"Shadows in the material environment are cast by these two light sources. In Android "-->
+        <!--"development, shadows occur when light sources are blocked by sheets of material at "-->
+        <!--"various positions along the z-axis. On the web, shadows are depicted by manipulating the "-->
+        <!--"y-axis only. The following example shows the card with a height of 6dp.\n\n"-->
+
+        <!--"Resting elevation.\n\n"-->
+
+        <!--"All material objects, regardless of size, have a resting elevation, or default elevation "-->
+        <!--"that does not change. If an object changes elevation, it should return to its resting "-->
+        <!--"elevation as soon as possible.\n\n"-->
+
+        <!--"Component elevations.\n\n"-->
+
+        <!--"The resting elevation for a component type is consistent across apps (e.g., FAB elevation "-->
+        <!--"does not vary from 6dp in one app to 16dp in another app).\n"-->
+        <!--"Components may have different resting elevations across platforms, depending on the depth "-->
+        <!--"of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"-->
+
+        <!--"Responsive elevation and dynamic elevation offsets.\n\n"-->
+
+        <!--"Some component types have responsive elevation, meaning they change elevation in response "-->
+        <!--"to user input (e.g., normal, focused, and pressed) or system events. These elevation "-->
+        <!--"changes are consistently implemented using dynamic elevation offsets.\n"-->
+        <!--"Dynamic elevation offsets are the goal elevation that a component moves towards, relative "-->
+        <!--"to the component’s resting state. They ensure that elevation changes are consistent "-->
+        <!--"across actions and component types. For example, all components that lift on press have "-->
+        <!--"the same elevation change relative to their resting elevation.\n"-->
+        <!--"Once the input event is completed or cancelled, the component will return to its resting "-->
+        <!--"elevation.\n\n"-->
+
+        <!--"Avoiding elevation interference.\n\n"-->
+
+        <!--"Components with responsive elevations may encounter other components as they move between "-->
+        <!--"their resting elevations and dynamic elevation offsets. Because material cannot pass "-->
+        <!--"through other material, components avoid interfering with one another any number of ways, "-->
+        <!--"whether on a per component basis or using the entire app layout.\n"-->
+        <!--"On a component level, components can move or be removed before they cause interference. "-->
+        <!--"For example, a floating action button (FAB) can disappear or move off screen before a "-->
+        <!--"user picks up a card, or it can move if a snackbar appears.\n"-->
+        <!--"On the layout level, design your app layout to minimize opportunities for interference. "-->
+        <!--"For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "-->
+        <!--"when a user tries to pick up one of cards.\n\n"-->
+    </string>
 </resources>

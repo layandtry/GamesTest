@@ -40,6 +40,15 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
 
+        rule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.wlw_02_19_wangmiao.gamestest.ACTION_START");
+                intent.addCategory("com.wlw_02_19_wangmiao.gamestest.ANOTHER_CATEGORY");
+                startActivity(intent);
+            }
+        });
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -41,6 +41,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="com.wlw_02_19_wangmiao.gamestest.ACTION_START" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.wlw_02_19_wangmiao.gamestest.OTHER_CATEGORY" />
             </intent-filter>
@@ -53,6 +54,17 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wlw_02_19_wangmiao.gamestest.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.wlw_02_19_wangmiao.gamestest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.wlw_02_19_wangmiao.gamestest.ANOTHER_CATEGORY" />
+            </intent-filter>
         </activity>
     </application>
 

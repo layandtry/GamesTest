@@ -8,12 +8,12 @@
         android:title="设置"
         android:background="#87cefa"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/games_rules"
-        android:orderInCategory="100"
-        android:title="游戏规则"
-        android:background="#87cefa"
-        app:showAsAction="never" />
+    <!--<item-->
+        <!--android:id="@+id/games_rules"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="游戏规则"-->
+        <!--android:background="#87cefa"-->
+        <!--app:showAsAction="never" />-->
     <item
         android:id="@+id/suggestion"
         android:orderInCategory="100"

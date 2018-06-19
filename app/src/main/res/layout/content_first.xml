@@ -75,6 +75,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#FFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="有一天，锤锤的学校放假了，锤锤想要回家.可是回家就得收拾行李，面对柜子的衣服锤锤，顿时傻眼了！！亲！！你能帮助锤锤收拾行李吗？" />
 
     <Button
@@ -83,6 +85,8 @@
         android:layout_height="wrap_content"
         android:background="#f0ffff"
         android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="开始游戏" />
 
     <Button
@@ -91,6 +95,8 @@
         android:layout_height="wrap_content"
         android:background="#f0ffff"
         android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="轮播图" />
 
     <Button
@@ -99,6 +105,8 @@
         android:layout_height="wrap_content"
         android:background="#f0ffff"
         android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="游戏规则" />
 
 </LinearLayout>

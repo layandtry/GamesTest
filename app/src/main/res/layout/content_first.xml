@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".FirstActivity"
-    tools:showIn="@layout/activity_first">
+    android:background="@mipmap/background7">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/first" />
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="有一天，锤锤的学校放假了，锤锤想要回家.可是回家就得收拾行李，面对柜子的衣服锤锤，顿时傻眼了！！亲！！你能帮助锤锤收拾行李吗？" />
+
+    <Button
+        android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#f0ffff"
+        android:layout_gravity="center"
+        android:text="开始游戏" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/sowing_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f0ffff"
+        android:layout_gravity="center"
+        android:text="轮播图" />
+
+    <Button
+        android:id="@+id/rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f0ffff"
+        android:layout_gravity="center"
+        android:text="游戏规则" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试菜单" />
+</LinearLayout>

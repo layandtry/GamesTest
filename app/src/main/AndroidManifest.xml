@@ -23,7 +23,18 @@
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_fullscreen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="com.wlw_02_19_wangmiao.gamestest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.wlw_02_19_wangmiao.gamestest.MY_CATEGORY" />
+                <!--
+            android.intent.category.DEFAULT是一种默认的category，
+            在启动startActivity（）方法的时候会自动将这个category添加到Intent中
+                -->
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

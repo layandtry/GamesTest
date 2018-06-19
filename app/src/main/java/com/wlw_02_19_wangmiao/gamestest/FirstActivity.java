@@ -20,7 +20,7 @@ public class FirstActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Button startButton = (Button)findViewById(R.id.start);
-        Button sowingMapButton = (Button)findViewById(R.id.sowing_map);
+        Button gamesSectionButton = (Button)findViewById(R.id.sowing_map);
         Button rule = (Button)findViewById(R.id.rule);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,7 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
 
-        sowingMapButton.setOnClickListener(new View.OnClickListener() {
+        gamesSectionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent("com.wlw_02_19_wangmiao.gamestest.ACTION_START");

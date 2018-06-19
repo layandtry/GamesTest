@@ -58,17 +58,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/first" />
+            android:src="@drawable/pick_package7" />
     </com.wlw_02_19_wangmiao.gamestest.Image3DSwitchView>
     <!--可以看到，这里我们引入了一个Image3DSwitchView控件，-->
     <!--然后在这个控件下面又添加了7个Image3DView控件，-->
     <!--每个Image3DView其实就是一个ImageView，因此我们可以通过android:src属于给它指定一张图片。-->
     <!--注意前面也说过了，Image3DSwitchView控件下的子控件必须大于等于5个，不然将无法正常显示。-->
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/first" />
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:srcCompat="@drawable/first" />-->
 
     <TextView
         android:id="@+id/textView"

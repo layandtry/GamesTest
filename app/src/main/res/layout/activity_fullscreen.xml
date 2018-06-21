@@ -20,19 +20,40 @@
         android:textSize="50sp"
         android:textStyle="bold" />
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/linearLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" >
-
-        <TextView
-            android:id="@+id/Current_items"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:text="当前物品" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前时间："
+                android:textSize="30dp"
+                android:textColor="#FF0000"/>
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#FF0000"/>
+         </LinearLayout>
+            <TextView
+                android:id="@+id/Current_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="当前物品"
+                android:textColor="#FFF"
+                android:textSize="20dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -51,23 +72,23 @@
                     android:layout_alignParentTop="true"
                     android:src="@drawable/books" />
 
-                <TextView
-                    android:id="@+id/BookQuantities"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/BookImage"
-                    android:text="0"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/BookQuantities"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/BookImage"-->
+                    <!--android:text="0"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
 
-                <TextView
-                    android:id="@+id/description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:text="书"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/description"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:text="书"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -82,23 +103,23 @@
                     android:layout_alignParentTop="true"
                     android:src="@drawable/dress02" />
 
-                <TextView
-                    android:id="@+id/DressQuantities"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/DressImage"
-                    android:text="0"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/DressQuantities"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/DressImage"-->
+                    <!--android:text="0"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
 
-                <TextView
-                    android:id="@+id/DressDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="裙子"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/DressDescription"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:text="裙子"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -113,23 +134,23 @@
                     android:layout_alignParentTop="true"
                     android:src="@drawable/jean01" />
 
-                <TextView
-                    android:id="@+id/JeansQuantities"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/JeansImage"
-                    android:text="0"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/JeansQuantities"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/JeansImage"-->
+                    <!--android:text="0"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
 
-                <TextView
-                    android:id="@+id/JeansDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="牛仔裤"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/JeansDescription"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="牛仔裤"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -138,29 +159,29 @@
 
                 <ImageView
                     android:id="@+id/TshirtImage"
-                    android:layout_width="80dp"
-                    android:layout_height="60dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:src="@drawable/t_shirt" />
 
-                <TextView
-                    android:id="@+id/TshirtQuantities"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/TshirtImage"
-                    android:text="0"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/TshirtQuantities"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/TshirtImage"-->
+                    <!--android:text="0"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
 
-                <TextView
-                    android:id="@+id/TshirtDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="短袖"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/TshirtDescription"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="短袖"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -169,29 +190,29 @@
 
                 <ImageView
                     android:id="@+id/SocksImage"
-                    android:layout_width="80dp"
-                    android:layout_height="60dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:src="@drawable/socks" />
 
-                <TextView
-                    android:id="@+id/SocksQuantities"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/SocksImage"
-                    android:text="0"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/SocksQuantities"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/SocksImage"-->
+                    <!--android:text="0"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
 
-                <TextView
-                    android:id="@+id/SockDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="袜子"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/SockDescription"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="袜子"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -200,28 +221,28 @@
 
                 <ImageView
                     android:id="@+id/HoodiesImage"
-                    android:layout_width="80dp"
-                    android:layout_height="60dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:src="@drawable/hoodies" />
 
-                <TextView
-                    android:id="@+id/HoodiesQuantities"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:text="0"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/HoodiesQuantities"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:text="0"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
 
-                <TextView
-                    android:id="@+id/HoodiesDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="卫衣"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <!--<TextView-->
+                    <!--android:id="@+id/HoodiesDescription"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="卫衣"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>

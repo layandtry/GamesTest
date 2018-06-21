@@ -11,12 +11,15 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
 public class FullscreenActivity extends AppCompatActivity {
+
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -86,7 +89,8 @@ public class FullscreenActivity extends AppCompatActivity {
             return false;
         }
     };
-
+    private int recLen = 10;
+    private TextView txtView;
     /**
      * 游戏部分的代码
      * @param savedInstanceState
@@ -94,9 +98,9 @@ public class FullscreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_fullscreen);
-
+        txtView = (TextView)findViewById(R.id.timer);
+        handler.postDelayed(runnable, 1000);
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
@@ -622,6 +626,8 @@ public class FullscreenActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
         // Set up the user interaction to manually show or hide the system UI.
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -635,6 +641,23 @@ public class FullscreenActivity extends AppCompatActivity {
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
+    Handler handler = new Handler();
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            try{
+                if (recLen > 0){
+                    recLen--;
+                    txtView.setText("" + recLen);
+                    handler.postDelayed(this, 1000);
+                }else{
+                    Toast.makeText(FullscreenActivity.this,"游戏失败！请重新开始！",Toast.LENGTH_SHORT).show();
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    };
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
